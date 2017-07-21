@@ -77,6 +77,16 @@ UINavigationControllerDelegate, UIScrollViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        showImage.contentSize.width = 1080
+        showImage.contentSize.height = 1080
+        showImage.minimumZoomScale = 1.0
+        showImage.maximumZoomScale = 5.0
+
+        func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+            return photo
+
+        }
+
         photo.tintColor = UIColor.white
         upView.backgroundColor = UIColor.asiBlack
         downView.backgroundColor = UIColor.asiDandelion
