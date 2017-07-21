@@ -82,12 +82,6 @@ UINavigationControllerDelegate, UIScrollViewDelegate {
         showImage.minimumZoomScale = 1.0
         showImage.maximumZoomScale = 10.0
 
-        func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-            return photo
-
-
-        }
-
         photo.tintColor = UIColor.white
         photo.contentMode = .scaleAspectFill
         upView.backgroundColor = UIColor.asiBlack
@@ -102,6 +96,11 @@ UINavigationControllerDelegate, UIScrollViewDelegate {
         toGetPicture.titleLabel?.font = UIFont.asiTextStyle23Font()
         toGetPicture.setTitle("Pick an Image", for: UIControlState.normal)
         toGetPicture.setTitleColor(UIColor.white, for: UIControlState.normal)
+
+    }
+
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return photo
 
     }
 

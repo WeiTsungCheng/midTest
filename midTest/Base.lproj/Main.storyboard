@@ -40,6 +40,9 @@
                                             <constraint firstAttribute="bottom" secondItem="8XI-Wc-Arf" secondAttribute="bottom" id="leI-L1-XXS"/>
                                             <constraint firstAttribute="trailing" secondItem="8XI-Wc-Arf" secondAttribute="trailing" id="yKy-y7-QIB"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="cSS-oU-wY1"/>
+                                        </connections>
                                     </scrollView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-my-HAi">
                                         <rect key="frame" x="56" y="529" width="109" height="30"/>
