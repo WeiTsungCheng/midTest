@@ -77,7 +77,7 @@ UINavigationControllerDelegate, UIScrollViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        //showImage.tintColor = UIColor.white
+        photo.tintColor = UIColor.white
         upView.backgroundColor = UIColor.asiBlack
         downView.backgroundColor = UIColor.asiDandelion
 
