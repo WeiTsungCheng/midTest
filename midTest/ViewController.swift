@@ -9,15 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
-UINavigationControllerDelegate {
+
+UINavigationControllerDelegate, UIScrollViewDelegate {
+
+
+    @IBOutlet weak var photo: UIImageView!
 
     @IBOutlet weak var upView: UIView!
 
     @IBOutlet weak var downView: UIView!
 
+    @IBOutlet weak var toGetPicture: UIButton!
 
-   @IBOutlet weak var showImage: UIImageView!
-
+    @IBOutlet weak var showImage: UIScrollView!
 
    //拍照
     @IBAction func useCammera(_ sender: Any) {
@@ -59,7 +63,7 @@ UINavigationControllerDelegate {
 ////放照片
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            showImage.image = image
+            photo.image = image
         } else {
             print("Something went wrong")
         }
@@ -73,11 +77,19 @@ UINavigationControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        //showImage.tintColor = UIColor.white
         upView.backgroundColor = UIColor.asiBlack
-
         downView.backgroundColor = UIColor.asiDandelion
-        showImage.tintColor = UIColor.white
-        //showImage.backgroundColor = UIColor.asiDandelion
+
+        toGetPicture.backgroundColor = UIColor.asiBlack
+        toGetPicture.layer.shadowColor = UIColor.asiBlack26.cgColor
+        toGetPicture.layer.shadowOpacity = 1
+        toGetPicture.layer.shadowOffset = CGSize(width: 0, height: 2)
+        toGetPicture.layer.shadowRadius = 2
+
+        toGetPicture.titleLabel?.font = UIFont.asiTextStyle23Font()
+        toGetPicture.setTitle("Pick an Image", for: UIControlState.normal)
+        toGetPicture.setTitleColor(UIColor.white, for: UIControlState.normal)
 
     }
 
