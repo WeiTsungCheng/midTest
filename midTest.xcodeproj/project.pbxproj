@@ -12,6 +12,7 @@
 		C5F167F71F21B9B6008A2DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F167F51F21B9B6008A2DD5 /* Main.storyboard */; };
 		C5F167F91F21B9B6008A2DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F167F81F21B9B6008A2DD5 /* Assets.xcassets */; };
 		C5F167FC1F21B9B6008A2DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F167FA1F21B9B6008A2DD5 /* LaunchScreen.storyboard */; };
+		C5F1680D1F21C10B008A2DD5 /* addColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1680C1F21C10B008A2DD5 /* addColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C5F167F81F21B9B6008A2DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5F167FB1F21B9B6008A2DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5F167FD1F21B9B6008A2DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F1680C1F21C10B008A2DD5 /* addColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,20 @@
 				C5F167F11F21B9B6008A2DD5 /* AppDelegate.swift */,
 				C5F167F31F21B9B6008A2DD5 /* ViewController.swift */,
 				C5F167F51F21B9B6008A2DD5 /* Main.storyboard */,
+				C5F1680C1F21C10B008A2DD5 /* addColor.swift */,
 				C5F167F81F21B9B6008A2DD5 /* Assets.xcassets */,
+				C5F1680B1F21BDC9008A2DD5 /* New Group */,
 				C5F167FA1F21B9B6008A2DD5 /* LaunchScreen.storyboard */,
 				C5F167FD1F21B9B6008A2DD5 /* Info.plist */,
 			);
 			path = midTest;
+			sourceTree = "<group>";
+		};
+		C5F1680B1F21BDC9008A2DD5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					C5F167ED1F21B9B6008A2DD5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = EEYLEC2NZB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F1680D1F21C10B008A2DD5 /* addColor.swift in Sources */,
 				C5F167F41F21B9B6008A2DD5 /* ViewController.swift in Sources */,
 				C5F167F21F21B9B6008A2DD5 /* AppDelegate.swift in Sources */,
 			);
@@ -260,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EEYLEC2NZB;
 				INFOPLIST_FILE = midTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.William.midTest;
@@ -272,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EEYLEC2NZB;
 				INFOPLIST_FILE = midTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.William.midTest;
@@ -299,6 +314,7 @@
 				C5F168021F21B9B6008A2DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
