@@ -24,35 +24,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4U-Sj-WiQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="592"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-my-HAi">
-                                        <rect key="frame" x="8" y="523" width="109" height="30"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jae-VF-XYl">
+                                        <rect key="frame" x="0.0" y="157" width="375" height="336"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_photo" translatesAutoresizingMaskIntoConstraints="NO" id="8XI-Wc-Arf">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="centerX" secondItem="jae-VF-XYl" secondAttribute="centerX" id="DLV-5n-V0I"/>
+                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="leading" secondItem="jae-VF-XYl" secondAttribute="leading" id="ESL-ib-dwt"/>
+                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="top" secondItem="jae-VF-XYl" secondAttribute="top" id="N53-tv-Gcb"/>
+                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="centerY" secondItem="jae-VF-XYl" secondAttribute="centerY" id="aoP-Ti-jWh"/>
+                                            <constraint firstAttribute="bottom" secondItem="8XI-Wc-Arf" secondAttribute="bottom" id="leI-L1-XXS"/>
+                                            <constraint firstAttribute="trailing" secondItem="8XI-Wc-Arf" secondAttribute="trailing" id="yKy-y7-QIB"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-my-HAi">
+                                        <rect key="frame" x="56" y="529" width="109" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="toUseCamera"/>
                                         <connections>
                                             <action selector="useCammera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kcz-Ck-8q9"/>
                                         </connections>
                                     </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jae-VF-XYl">
-                                        <rect key="frame" x="0.0" y="157" width="375" height="336"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_photo" translatesAutoresizingMaskIntoConstraints="NO" id="8XI-Wc-Arf">
-                                                <rect key="frame" x="22" y="24" width="331" height="288"/>
-                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="centerX" secondItem="jae-VF-XYl" secondAttribute="centerX" id="3bg-Qh-u0B"/>
-                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="leading" secondItem="jae-VF-XYl" secondAttribute="leading" constant="22" id="D85-hp-CYi"/>
-                                            <constraint firstAttribute="trailing" secondItem="8XI-Wc-Arf" secondAttribute="trailing" constant="22" id="QoR-l1-XmJ"/>
-                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="top" secondItem="jae-VF-XYl" secondAttribute="top" constant="24" id="X8P-CE-0Wx"/>
-                                            <constraint firstAttribute="bottom" secondItem="8XI-Wc-Arf" secondAttribute="bottom" constant="24" id="gT8-dh-cQh"/>
-                                            <constraint firstItem="8XI-Wc-Arf" firstAttribute="centerY" secondItem="jae-VF-XYl" secondAttribute="centerY" id="ijJ-kM-eI5"/>
-                                        </constraints>
-                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="9zg-my-HAi" firstAttribute="top" secondItem="jae-VF-XYl" secondAttribute="bottom" constant="30" id="3p9-4b-mow"/>
                                     <constraint firstAttribute="width" constant="375" id="S6q-7T-iZA"/>
                                     <constraint firstAttribute="bottom" secondItem="jae-VF-XYl" secondAttribute="bottom" constant="99" id="lUp-4h-d3D"/>
                                     <constraint firstItem="jae-VF-XYl" firstAttribute="top" secondItem="t4U-Sj-WiQ" secondAttribute="top" constant="157" id="r2A-tW-51N"/>
@@ -61,16 +61,14 @@
                                     <constraint firstAttribute="height" constant="592" id="zEY-SZ-yzk"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YE9-G0-kxQ">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YE9-G0-kxQ">
                                 <rect key="frame" x="0.0" y="590" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sab-Id-DGP">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sab-Id-DGP">
                                         <rect key="frame" x="97" y="16" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="180" id="Aga-Rm-3b6"/>
-                                            <constraint firstAttribute="height" constant="44" id="GO5-Si-wlE"/>
-                                        </constraints>
                                         <state key="normal" title="getpicture"/>
                                         <connections>
                                             <action selector="toGetPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqE-eQ-2PG"/>
@@ -78,22 +76,13 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="sab-Id-DGP" firstAttribute="centerX" secondItem="YE9-G0-kxQ" secondAttribute="centerX" id="mel-tr-fFr"/>
-                                    <constraint firstItem="sab-Id-DGP" firstAttribute="centerY" secondItem="YE9-G0-kxQ" secondAttribute="centerY" id="qqw-me-32J"/>
-                                    <constraint firstAttribute="width" constant="375" id="tDv-fA-g5C"/>
-                                    <constraint firstAttribute="height" constant="77" id="xbD-Bx-A6t"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="t4U-Sj-WiQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5mv-fn-eDJ"/>
                             <constraint firstAttribute="trailing" secondItem="t4U-Sj-WiQ" secondAttribute="trailing" id="Prs-mQ-VhS"/>
-                            <constraint firstItem="YE9-G0-kxQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b0W-5N-QC7"/>
                             <constraint firstItem="t4U-Sj-WiQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eZ2-dX-FHJ"/>
-                            <constraint firstAttribute="trailing" secondItem="YE9-G0-kxQ" secondAttribute="trailing" id="lNE-Lr-MOF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YE9-G0-kxQ" secondAttribute="bottom" id="oju-IB-st8"/>
                         </constraints>
                     </view>
                     <connections>
